@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="#5f8ce6"
+        android:layout_marginEnd="33dp"
+        android:layout_alignBaseline="@+id/reset_button"
+        android:layout_alignBottom="@+id/reset_button"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:background="#f2182e"
+        android:textColor="#ffffff"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
