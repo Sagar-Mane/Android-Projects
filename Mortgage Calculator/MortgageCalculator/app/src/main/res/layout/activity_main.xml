@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bananatechnologies.mortgagecalculator.MainActivity">
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:pstsIndicatorHeight="1.5dp"
+        app:pstsDividerPadding="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        app:pstsIndicatorColor="#000000"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <!--<android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:animateLayoutChanges="true"
+            android:background="@color/colorPrimary"
+            android:isScrollContainer="false"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="0dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="0dp"/>-->
+
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

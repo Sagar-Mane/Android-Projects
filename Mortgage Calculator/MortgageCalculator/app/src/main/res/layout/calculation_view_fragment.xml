@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/property_info">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:text="Your Amount due per month"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp">
+
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <TextView
+                android:id="@+id/loan_amount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/piechart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="11dp"
+                android:text="Loan Amount"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loan_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/loan_amount_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginRight="20dp"
+                android:ems="8"
+                android:text="$0" />
+
+            <SeekBar
+                android:id="@+id/loan_amount1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/loan_amount_label"
+                android:layout_below="@+id/loan_amount_label"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:max="15000000" />
+
+            <TextView
+                android:id="@+id/down_payment_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/loan_amount1"
+                android:layout_below="@+id/loan_amount1"
+                android:layout_marginTop="4dp"
+                android:text="Down Payment"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/down_payment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/down_payment_label"
+                android:layout_below="@+id/down_payment_label"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:max="350000" />
+
+            <TextView
+                android:id="@+id/down_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/down_payment_label"
+                android:layout_alignStart="@+id/loan_amount"
+                android:layout_marginRight="20dp"
+                android:ems="8"
+                android:inputType="numberDecimal"
+                android:text="$0" />
+
+            <TextView
+                android:id="@+id/apr_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/down_payment1"
+                android:layout_below="@+id/down_payment_label"
+                android:layout_marginTop="30dp"
+                android:text="APR"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/apr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/apr_label"
+                android:layout_alignBottom="@+id/apr_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:ems="8"
+                android:inputType="numberDecimal"
+                android:text="0 %" />
+
+            <SeekBar
+                android:id="@+id/apr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/apr_label"
+                android:layout_below="@+id/apr_label"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:max="15" />
+            <!--<Button
+                android:paddingLeft="5dp"
+                android:background="#f1efef"
+                android:id="@+id/new_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="390dp"
+                />-->
+
+            <Button
+                android:id="@+id/more_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/loan_amount"
+                android:layout_below="@+id/apr1"
+                android:text="More Options" />
+
+            <TextView
+                android:id="@+id/terms_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/more_options"
+                android:layout_alignBottom="@+id/more_options"
+                android:layout_alignStart="@+id/apr1"
+                android:text="Terms"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Terms_of_loan"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="394dp"
+            android:layout_marginLeft="75dp">
+
+        </Spinner>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/more_options_layout"
+            android:layout_width="384dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.04">
+
+            <TextView
+                android:id="@+id/type_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Prop Type"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/address_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/type_label"
+                android:layout_below="@+id/type_label"
+                android:layout_marginTop="28dp"
+                android:text="Street Address"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/city_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/address_label"
+                android:layout_below="@+id/address_label"
+                android:layout_marginTop="29dp"
+                android:text="City"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/city_label"
+                android:layout_alignBottom="@+id/city_label"
+                android:layout_alignParentEnd="true"
+                android:ems="6"
+                android:inputType="text"
+                android:maxLength="100" />
+
+            <TextView
+                android:id="@+id/state_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/city_label"
+                android:layout_below="@+id/city_label"
+                android:layout_marginTop="30dp"
+                android:text="State"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/zipcode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/state_label"
+                android:layout_below="@+id/state_label"
+                android:layout_marginTop="38dp"
+                android:text="Zipcode"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ems="5"
+                android:layout_marginTop="210dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/city"
+                android:layout_alignParentEnd="true"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+
+            <Button
+                android:background="#f1efef"
+                android:id="@+id/less_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Less Options"
+                android:layout_below="@+id/zipcode"
+                android:layout_alignStart="@+id/zipcode_label" />
+
+            <Button
+                android:background="#f1efef"
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Save"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/zipcode" />
+
+
+            <Spinner
+                android:id="@+id/state"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="170dp"
+                android:layout_marginRight="25dp">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/property_type"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property"
+                android:layout_alignEnd="@+id/save_button">
+
+            </Spinner>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

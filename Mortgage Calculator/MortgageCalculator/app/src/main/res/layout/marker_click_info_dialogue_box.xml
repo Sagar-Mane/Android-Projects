@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Details"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/prop_type_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Type:"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/address_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_marginTop="95dp"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/city_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City:"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"/>
+    <TextView
+        android:id="@+id/loan_amount_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Amount:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="145dp" />
+    <TextView
+        android:id="@+id/apr_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apr:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"/>
+
+    <TextView
+        android:id="@+id/monthly_payment_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Payment:"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="195dp"/>
+    <Button
+        android:id="@+id/Edit_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp" />
+    <Button
+        android:id="@+id/Delete_dialogue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="250dp"/>
+
+</RelativeLayout>

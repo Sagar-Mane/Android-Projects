@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/marker_window">
+
+    <TextView
+        android:id="@+id/prop_type_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marker Window"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/address_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/city_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:id="@+id/loan_amount_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="loan_amount"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:id="@+id/apr_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apr"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/monthly_payment_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="monthly_payment"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"/>
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_alignBaseline="@+id/Edit"
+        android:layout_alignBottom="@+id/Edit"
+        android:layout_alignStart="@+id/monthly_payment_marker" />
+
+    <Button
+        android:id="@+id/Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/monthly_payment_marker"
+        android:layout_toEndOf="@+id/loan_amount_marker" />
+
+</RelativeLayout>
